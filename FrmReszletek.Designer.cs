@@ -39,6 +39,7 @@
             lblUI03 = new Label();
             lblUI04 = new Label();
             btnMain = new Button();
+            btnTorles = new Button();
             ((System.ComponentModel.ISupportInitialize)nudFizu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudID).BeginInit();
             SuspendLayout();
@@ -151,16 +152,28 @@
             // 
             btnMain.Location = new Point(12, 274);
             btnMain.Name = "btnMain";
-            btnMain.Size = new Size(319, 52);
+            btnMain.Size = new Size(240, 52);
             btnMain.TabIndex = 5;
-            btnMain.Text = "Hozzáadás";
+            btnMain.Text = "---------";
             btnMain.UseVisualStyleBackColor = true;
+            // 
+            // btnTorles
+            // 
+            btnTorles.BackColor = Color.Coral;
+            btnTorles.Enabled = false;
+            btnTorles.Location = new Point(258, 274);
+            btnTorles.Name = "btnTorles";
+            btnTorles.Size = new Size(73, 52);
+            btnTorles.TabIndex = 5;
+            btnTorles.Text = "Törlés";
+            btnTorles.UseVisualStyleBackColor = false;
             // 
             // FrmReszletek
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(343, 338);
+            Controls.Add(btnTorles);
             Controls.Add(btnMain);
             Controls.Add(chbJogsi);
             Controls.Add(dtpSzul);
@@ -173,7 +186,7 @@
             Controls.Add(lblUI02);
             Controls.Add(lblUI01);
             Font = new Font("Segoe UI", 12F);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "FrmReszletek";
             Text = "FrmReszletek";
             ((System.ComponentModel.ISupportInitialize)nudFizu).EndInit();
@@ -195,5 +208,6 @@
         private Label lblUI03;
         private Label lblUI04;
         private Button btnMain;
+        private Button btnTorles;
     }
 }

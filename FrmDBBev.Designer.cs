@@ -56,6 +56,8 @@
             dgvSzemelyek.ReadOnly = true;
             dgvSzemelyek.RowHeadersVisible = false;
             dgvSzemelyek.RowHeadersWidth = 51;
+            dgvSzemelyek.ScrollBars = ScrollBars.Vertical;
+            dgvSzemelyek.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvSzemelyek.Size = new Size(1158, 389);
             dgvSzemelyek.TabIndex = 0;
             // 
